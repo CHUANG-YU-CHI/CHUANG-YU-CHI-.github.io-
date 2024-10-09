@@ -1,2 +1,108 @@
-<h1> Hello World <h1>
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基本 HTML 網頁範例</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        .content-block {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+        img {
+            width: 300px;
+            height: auto;
+            display: block;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        ul {
+            list-style-type: square;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>我的基本 HTML 網頁</h1>
+
+    <!-- 圖片 -->
+    <img src="https://via.placeholder.com/300" alt="範例圖片">
+
+    <!-- 內容區塊 -->
+    <div class="content-block">
+        <h2>這是內容區塊</h2>
+        <p>這是一個區塊，裡面可以放任何內容，如文字、圖片等。這段文字是示例內容，展示區塊的用途。</p>
+    </div>
+
+    <!-- 按鈕 -->
+    <button onclick="alert('你點擊了按鈕！')">點我！</button>
+
+    <!-- 清單 -->
+    <h2>這是一個清單</h2>
+    <ul>
+        <li>清單項目 1</li>
+        <li>清單項目 2</li>
+        <li>清單項目 3</li>
+    </ul>
+
+    <!-- 表格 -->
+    <h2>這是一個表格</h2>
+    <table>
+        <tr>
+            <th>姓名</th>
+            <th>年齡</th>
+            <th>職業</th>
+        </tr>
+        <tr>
+            <td>張三</td>
+            <td>25</td>
+            <td>工程師</td>
+        </tr>
+        <tr>
+            <td>李四</td>
+            <td>30</td>
+            <td>設計師</td>
+        </tr>
+        <tr>
+            <td>王五</td>
+            <td>28</td>
+            <td>老師</td>
+        </tr>
+    </table>
+
+</body>
+</html>
   
