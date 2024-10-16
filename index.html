@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>基本 HTML 網頁範例</title>
+    <title>Flexbox 排版範例</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,6 +11,7 @@
         }
         h1 {
             color: #4CAF50;
+            text-align: center;
         }
         .content-block {
             background-color: #f9f9f9;
@@ -18,11 +19,16 @@
             border: 1px solid #ddd;
             margin-bottom: 20px;
         }
-        img {
-            width: 500px;
-            height: auto;
-            display: block;
+        /* Flexbox 用於圖片排版 */
+        .image-container {
+            display: flex;
+            justify-content: space-around; /* 使圖片均勻分佈並置中 */
+            align-items: center;
             margin-bottom: 20px;
+        }
+        .image-container img {
+            width: 200px;
+            height: auto;
         }
         button {
             padding: 10px 20px;
@@ -30,6 +36,8 @@
             color: white;
             border: none;
             cursor: pointer;
+            display: block;
+            margin: 0 auto; /* 讓按鈕置中 */
         }
         button:hover {
             background-color: #45a049;
@@ -56,10 +64,14 @@
 </head>
 <body>
 
-    <h1>我的基本 HTML 網頁</h1>
+    <h1>使用 Flexbox 排版的網頁</h1>
 
-    <!-- 圖片 -->
-    <img src="https://i.imgur.com/g6vAnZV.jpeg" alt="範例圖片">
+    <!-- 圖片區域 -->
+    <div class="image-container">
+        <img src="https://i.imgur.com/g6vAnZV.jpeg"範例圖片1">
+        <img src="https://i.imgur.com/sWhcCXk.jpeg"範例圖片2">
+        <img src="https://i.imgur.com/Cr4FJPn.jpeg"範例圖片3">
+    </div>
 
     <!-- 內容區塊 -->
     <div class="content-block">
@@ -105,4 +117,3 @@
 
 </body>
 </html>
-  
